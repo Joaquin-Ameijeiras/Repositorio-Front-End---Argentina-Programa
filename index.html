@@ -1,7 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Joaquin Ameijeiras Portfolio</title>
+    <!-- Favicon -->
+    <link rel="icon" href="Imagenes/foto de perfil wpp.jpg" type="image/x-icon">
+
+    <!-- Title -->
+    <title>Joaquin Ameijeiras | Desarrollo Web Full-Stack</title>
 
     <!-- Metadatos -->
     <meta charset="UTF-8">
@@ -10,14 +14,101 @@
     <meta name="author" content="Joaquin Osvaldo Ameijeiras">
     <meta name="description" content="Portfolio Web de Joaquin Ameijeiras">
     <meta name="keywords" content="HTML, CSS, JavaScript, React, Bootstrap">
-
-    <!-- CSS -->
-    <link rel="stylesheet" href="style.css">
+    
+    <!-- Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Alexandria:wght@600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap" rel="stylesheet">
 
     <!-- Bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <header>
+        <!-- Nav -->
+        <nav class="navbar navbar-expand-md">
+            <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-toggler" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbar-toggler">
+                    <a class="navbar-brand" href="#">Portfolio Web</a>
+                    <ul class="navbar-nav d-flex justify-content-center aling-items-center">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="#about-me">About me</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Skills</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Contact me</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <article>
+        <section id="present-me">
+            <div class="d-flex flex-row justify-content-around align-items-center colrev">
+                <div id="text-present">
+                    <h1 id="author">Hi, I am Joaquin Ameijeiras</h1>
+                    <h2 id="profesion">Full Stack Developer</h2>
+                    <a class="btn btn-success" download="CV Joaquin Ameijeiras" href="Imagenes/foto de perfil wpp.jpg" role="button">Download CV</a>
+                    <a class="btn btn-dark" href="https://github.com/Joaquin-Ameijeiras" role="button" target="_blank">Github</a>
+                </div>
+                <div>
+                    <img src="Imagenes/foto de perfil wpp.jpg" alt="Programador" id="photo-perfil" class="container-fluid">
+                </div>
+            </div>
+        </section>
+        <section>
+            <article>
+                <div class="container">
+                    <div class="row text-center">
+                        <h2 id="about-me">About me</h2>
+                    </div>
+                    <div class="row text-center">
+                        <p id="about-me-p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae ex optio earum. Quisquam recusandae, neque voluptatum aliquam obcaecati eius autem optio quia velit distinctio magni illo atque ipsum doloremque non?</p>
+                    </div>
+                </div>
+            </article>
+            <article>
+                <div class="container mt-5">
+                    <div class="row" id="users-p">
+                        <div class="col text-center">
+                            <i class="bi bi-instagram"></i>
+                            <br>
+                            <h6><a href="https://www.instagram.com/joacoameijeiras/" target="_blank">Instagram</a></h6>
+                            <p>joacoameijeiras</p>
+                        </div>
+                        <div class="col text-center">
+                            <i class="bi bi-envelope"></i>
+                            <br>
+                            <h6><a href="mailto:joacoprogramando@gmail.com?Subject=Hola,%20estamos%20interesados%20en%20su%20servicio" target="_blank">Email</a></h6>
+                            <p>joacoprogramando@gmail.com</p>
+                        </div>
+                        <div class="col text-center">
+                            <i class="bi bi-linkedin"></i>
+                            <br>
+                            <h6><a href="https://www.linkedin.com/in/joaquin-ameijeiras-493982250/" target="_blank">LinkedIn</a></h6>
+                            <p>Joaquin-Ameijeiras</p>
+                        </div>
+                        <div class="col text-center">
+                            <i class="bi bi-whatsapp"></i>
+                            <br>
+                            <h6><a href="https://walink.co/b9b9c5" target="_blank">Whatsapp</a></h6>
+                            <p>2235285579</p>
+                        </div>
+                    </div>
+                </div>
+            </article>
+        </section>
+    </article>
     
     <!-- Bootstrap -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
