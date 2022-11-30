@@ -27,9 +27,11 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
+    <!-- Header -->
     <header>
         <!-- Nav -->
-        <nav class="navbar navbar-expand-md">
+        <nav class="navbar navbar-dark navbar-expand-md">
             <div class="container-fluid">
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-toggler" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -41,10 +43,10 @@
                             <a class="nav-link" aria-current="page" href="#about-me">About me</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Skills</a>
+                            <a class="nav-link" href="#my-skills">Skills</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Contact me</a>
+                            <a class="nav-link" href="#users-p">Contact me</a>
                         </li>
                     </ul>
                 </div>
@@ -52,6 +54,7 @@
         </nav>
     </header>
 
+    <!-- Articles -->
     <article>
         <section id="present-me">
             <div class="d-flex flex-row justify-content-around align-items-center colrev">
@@ -67,39 +70,39 @@
             </div>
         </section>
         <section>
-            <article>
+            <article> <!-- Information about me - introduction -->
                 <div class="container">
                     <div class="row text-center">
                         <h2 id="about-me">About me</h2>
                     </div>
-                    <div class="row text-center">
-                        <p id="about-me-p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae ex optio earum. Quisquam recusandae, neque voluptatum aliquam obcaecati eius autem optio quia velit distinctio magni illo atque ipsum doloremque non?</p>
+                    <div class="row text-center mt-5">
+                        <p id="about-me-p">I am studying programming at the National Technological University (UTN). I am 21 years old and I know two languages, Spanish and English (B2). Actually, I lives in Mar del Plata, Argentina</p>
                     </div>
                 </div>
             </article>
-            <article>
+            <article> <!-- My users plataforms-->
                 <div class="container mt-5">
                     <div class="row" id="users-p">
                         <div class="col text-center">
-                            <i class="bi bi-instagram"></i>
+                            <a href="https://www.instagram.com/joacoameijeiras/" target="_blank"><i class="bi bi-instagram"></i></a>
                             <br>
                             <h6><a href="https://www.instagram.com/joacoameijeiras/" target="_blank">Instagram</a></h6>
                             <p>joacoameijeiras</p>
                         </div>
                         <div class="col text-center">
-                            <i class="bi bi-envelope"></i>
+                            <a href="mailto:joacoprogramando@gmail.com?Subject=Hola,%20estamos%20interesados%20en%20su%20servicio" target="_blank"><i class="bi bi-envelope"></i></a>
                             <br>
                             <h6><a href="mailto:joacoprogramando@gmail.com?Subject=Hola,%20estamos%20interesados%20en%20su%20servicio" target="_blank">Email</a></h6>
                             <p>joacoprogramando@gmail.com</p>
                         </div>
                         <div class="col text-center">
-                            <i class="bi bi-linkedin"></i>
+                            <a href="https://www.linkedin.com/in/joaquin-ameijeiras-493982250/" target="_blank"><i class="bi bi-linkedin"></i></a>
                             <br>
                             <h6><a href="https://www.linkedin.com/in/joaquin-ameijeiras-493982250/" target="_blank">LinkedIn</a></h6>
                             <p>Joaquin-Ameijeiras</p>
                         </div>
                         <div class="col text-center">
-                            <i class="bi bi-whatsapp"></i>
+                            <a href="https://walink.co/b9b9c5" target="_blank"><i class="bi bi-whatsapp"></i></a>
                             <br>
                             <h6><a href="https://walink.co/b9b9c5" target="_blank">Whatsapp</a></h6>
                             <p>2235285579</p>
@@ -107,8 +110,74 @@
                     </div>
                 </div>
             </article>
+            <article>
+                <div class="d-flex flex-column align-items-center">
+                    <div>
+                        <h2 id="what-i-do">What I do</h2>
+                    </div>
+                    <div class="mt-5">
+                        <img src="Imagenes/web development.png" alt="web development">
+                    </div>
+                </div>
+            </article>
+            <article>
+                <div>
+                    <h2 id="my-skills" class="text-center mt-5">My Skills</h2>
+                </div>
+                <div class="container mt-5">
+                    <div class="row text-center" id="container-skills">
+                        <div class="col">
+                            <h3>HTML</h3>
+                        </div>
+                        <div class="col">
+                            <h3>CSS</h3>
+                        </div>
+                        <div class="col">
+                            <h3>JAVASCRIPT</h3>
+                        </div>
+                        <div class="col">
+                            <h3>PHP</h3>
+                        </div>
+                    </div>
+                </div>
+            </article>
+            <article>
+                <div>
+                    <h2 id="get-in-touch" class="text-center mt-5">Get in touch</h2>
+                </div>
+                <form class="container mt-5">
+                    <div class="row">
+                        <div class="col">
+                            <input type="text" name="name" placeholder="Name" class="input-text">
+                        </div>
+                        <div class="col">
+                            <input type="text" name="last name" placeholder="Last name" class="input-text">
+                        </div>
+                    </div>
+                    <div class="row mt-3">
+                        <div class="col">
+                            <input type="email" name="email" placeholder="Email" id="" class="input-text">
+                        </div>
+                        <div class="col">
+                            <input type="number" name="number phone" placeholder="Phone number" class="input-text">
+                        </div>
+                    </div>
+                    <div class="row mt-3 justify-content-center" id="textself">
+                        <textarea name="text" id="message" placeholder="Message" class="input-text-area" cols="30" rows="10"></textarea>
+                    </div>
+                    <div class="row mt-3 text-center justify-content-center mb-5">
+                        <input type="submit" class="btn btn-success" name="enviar" id="boton" value="Submit now">
+                    </div>
+                </form>
+            </article>
         </section>
     </article>
+
+
+
+
+
+
     
     <!-- Bootstrap -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>

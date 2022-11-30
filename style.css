@@ -78,6 +78,8 @@ body {
     background-color: #46f8149a;
 }
 
+/* Article 540px */
+
 @media screen and (max-width: 540px) {
     .colrev {
         flex-direction: column-reverse !important;
@@ -91,6 +93,19 @@ body {
         width: 250px;
         border-radius: 50%;
         border: 2vh solid rgb(24, 24, 24);
+    }
+
+    #users-p {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #boton {
+        font-size: xx-small;
+    }
+
+    #container-skills h3 {
+        margin: 10px;
     }
 }
 
@@ -114,14 +129,75 @@ h6 {
     color: aliceblue;
 }
 
-#users-p p{
+#users-p p {
     font-family: 'Montserrat', sans-serif;
     color: aliceblue;
 }
 
-a:visited, a:link
-{
+a:visited, a:link {
     color: aliceblue;
     text-decoration: none; 
-    decoration: none; 
+}
+
+/* Article What I do */
+
+#what-i-do {
+    margin-top: 40px;
+    color: aliceblue;
+}
+
+/* Article My Skills */
+
+#my-skills {
+    color: aliceblue;
+}
+
+#container-skills {
+    background-color: rgba(39, 39, 39, 0.493);
+    border: 2px solid rgb(48, 48, 48);
+    height: 120px;
+    justify-content: center;
+    align-content: center;
+}
+
+#container-skills h3 {
+    text-shadow:    1px  0px 0px rgb(0, 0, 0),
+                    0px  1px 0px rgb(0, 0, 0),
+                    -1px  0px 0px rgb(0, 0, 0),
+                    0px -1px 0px rgb(0, 0, 0);
+    color: #46f8149a;
+    margin-bottom: 0;
+}
+
+#container-skills h3:hover {
+    transition: 0.4s;
+    color: rgba(0, 128, 0, 0.616);
+}
+
+/* Article Get in touch */
+
+#get-in-touch {
+    color: aliceblue;
+}
+
+.input-text {
+    color: aliceblue;
+    background-color: #171718;
+    width: 100%;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid rgb(104, 104, 104);
+}
+
+.input-text-area {
+    color: aliceblue;
+    background-color: #171718;
+    width: 80%;
+    outline: none;
+    border: 1px solid rgb(104, 104, 104);
+    height: 100px;
+}
+
+#boton {
+    width: 20%;
 }
